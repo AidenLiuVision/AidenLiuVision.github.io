@@ -49,6 +49,13 @@
     <!-- Gallery -->
     <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 
+    <!-- 显示相册 -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" /> -->
+
+    <!-- fancybox4.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    
+
     <!-- Google Analytics -->
     
 
@@ -116,17 +123,6 @@
 <section class="main clearfix">
     
         <div class="work">
-    <a href="/2022/01/31/【模特】小何/">
-        <img src="/assets/xiaohe/1.jpg" class="media" alt=""/>
-        <div class="caption">
-            <div class="work_title">
-                <h1>【模特】小何</h1>
-            </div>
-        </div>
-    </a>
-</div>
-    
-        <div class="work">
     <a href="/2022/01/30/【模特】雨辰/">
         <img src="/assets/yuchen/IMG_6993.jpg" class="media" alt=""/>
         <div class="caption">
@@ -181,6 +177,17 @@
     </a>
 </div>
     
+        <div class="work">
+    <a href="/2021/10/05/【模特】波妞/">
+        <img src="/assets/boniuu/IMG_0310.jpg" class="media" alt=""/>
+        <div class="caption">
+            <div class="work_title">
+                <h1>【模特】波妞</h1>
+            </div>
+        </div>
+    </a>
+</div>
+    
     
     <div class="pagination-container">
         
@@ -205,8 +212,31 @@
 <script src="/js/main.js"></script>
 
 
+<!-- 新添加的js文件：by aiden -->
+
+<script src="/js/wrapImage.js"></script>
+
+
 <!-- Gallery -->
 <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- 显示相册 -->
+<!-- <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+<script>
+    $('[data-fancybox="images"]').fancybox({//可选
+      thumbs : {
+        autoStart : true //缩略图
+      }
+    });
+    $('[data-fancybox]').fancybox({//启用函数，必须
+      protect: true //图片右键不能下载，可选
+    });
+
+  </script> -->
+
+<!-- fancybox4.0 -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>  
 
 <!-- Disqus Comments -->
 

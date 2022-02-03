@@ -1563,3 +1563,53 @@ figure.highlight.yml .number,
 .codeblock.yml .number {
     color: #0086b3;
 }
+
+/* 新添加的fancybox4.0的carousel: add by aiden */
+.carousel {
+    --carousel-button-color: #170724;
+    --carousel-button-bg: #fff;
+    --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%),
+      0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  
+    --carousel-button-svg-width: 20px;
+    --carousel-button-svg-height: 20px;
+    --carousel-button-svg-stroke-width: 2.5;
+  }
+  
+  .carousel .carousel__slide {
+    width: 30%;
+    padding: 10px;
+  }
+  
+  .carousel .carousel__button.is-prev {
+    left: -1.5rem;
+  }
+  
+  .carousel .carousel__button.is-next {
+    right: -1.5rem;
+  }
+  
+  .carousel .carousel__button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #A78BFA;
+  }
+  
+  .fancybox__container {
+    --fancybox-bg: rgba(32, 31, 31,0.9);
+    /* --fancybox-color: #4B5563; */
+    --fancybox-color: #fbfcfd;
+  
+    --carousel-button-width: 50px;
+    --carousel-button-height: 50px;
+    /* --carousel-button-bg: rgba(255, 255, 255, 0.9); */
+    --carousel-button-bg: rgb(91 78 76 / 74%);
+  
+    --carousel-button-svg-stroke-width: 1.8;
+    --carousel-button-svg-filter: none;
+  }
+  
+  .fancybox__caption {
+    padding: 1rem 4rem 0 4rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
