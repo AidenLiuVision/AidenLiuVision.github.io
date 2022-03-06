@@ -2,6 +2,23 @@ $(document).ready(function() {
     wrapImageWithFancyBox();
 });
 
+// Initialise Carousel
+const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
+  Dots: false,
+});
+
+// Thumbnails
+const thumbCarousel = new Carousel(document.querySelector("#thumbCarousel"), {
+  Sync: {
+    target: mainCarousel,
+    friction: 0,
+  },
+  Dots: false,
+  Navigation: false,
+  center: true,
+  slidesPerPage: 1,
+  infinite: false,
+});
 // /**
 //  * Wrap images with fancybox support.
 //  */
@@ -43,7 +60,20 @@ function wrapImageWithFancyBox() {
     // Initialise Carousel
     const myCarousel = new Carousel(document.querySelector("#myCarousel"), {
         preload: 2,
+        Dots: false,
       });
+//       // Thumbnails
+// const thumbCarousel = new Carousel(document.querySelector("#thumbCarousel"), {
+//   Sync: {
+//     target: mainCarousel,
+//     friction: 0,
+//   },
+//   Dots: false,
+//   Navigation: false,
+//   center: true,
+//   slidesPerPage: 1,
+//   infinite: false,
+// });
       
       // Customize Fancybox
       Fancybox.bind('[data-fancybox="gallery"]', {
